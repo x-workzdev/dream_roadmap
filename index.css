@@ -10,23 +10,71 @@ body {
     color: #333;
 }
 
-/* Header */
-header {
-    background-color: #0f172a;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
+/* Nav Bar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-header h1 {
-    font-size: 36px;
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #000;   /* BLACK */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
 }
 
-header p {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #cbd5f5;
+/* Logo */
+.nav-left img {
+    width: 150px;
+    height: 60px;
 }
+
+/* Text content */
+.nav-center {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+
+.nav-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+
+/* Right Instagram */
+/* .nav-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.insta-icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+} */
+
+/* Page content spacing */
+.content {
+    padding-top: 50px;
+}
+
+
 
 /* Sections */
 section {
