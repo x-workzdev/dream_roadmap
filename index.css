@@ -59,7 +59,7 @@ section h2 {
     padding: 25px;
     max-width: 800px;
     border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .step h3 {
@@ -87,168 +87,202 @@ section h2 {
 /* Footer */
 footer {
     background: #000;
-  color: #fff;
-  padding: 60px 40px;
-  font-family: "Segoe UI", sans-serif;
+    color: #fff;
+    padding: 60px 40px;
+    font-family: "Segoe UI", sans-serif;
 }
+
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-  max-width: 1200px;
-  margin: auto;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    justify-items: center;
 }
+
 .footer-logo {
-  width: 150px;
-  margin-bottom: 20px;
+    width: 150px;
+    margin-bottom: 20px;
 }
+
 .footer-col {
     display: flex;
     flex-direction: column;
 }
+
 .footer h4 {
     margin-bottom: 15px;
     font-size: 20px;
     font-weight: 600;
     position: relative;
 }
+
 .footer h4::after {
-  content: "";
-  width: 100px;
-  height: 3px;
-  background: #ff6a00;
-  display: block;
-  margin-top: 8px;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: #ff6a00;
+    display: block;
+    margin-top: 8px;
 }
+
 .social-links {
-  display: flex;
-  gap: 15px;
-  margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
 }
+
 .social-links a {
-  width: 40px;
-  height: 40px;
-  background: #1a1a1a;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  transition: 0.3s;
+    width: 40px;
+    height: 40px;
+    background: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: 0.3s;
 }
 
 .social-links a:hover {
-  background: #ff6a00;
+    background: #ff6a00;
 }
-.contact-info{
-  display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
 }
-contact-info i{
+
+contact-info i {
     color: #ff6a00;
     margin-right: 10px;
 }
-.contact-info p{
+
+.contact-info p {
     font-size: 15px;
     line-height: 1.6;
 }
+
 .subscribe-text {
-  font-size: 14px;
-  margin-bottom: 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
+
 .subscribe-box {
-  display: flex;
-  background: #1a1a1a;
-  border-radius: 30px;
-  overflow: hidden;
+    display: flex;
+    background: #1a1a1a;
+    border-radius: 30px;
+    overflow: hidden;
 }
+
 .subscribe-box input {
-  flex: 1;
-  border: none;
-  padding: 25px 19px;
-  background: transparent;
-  color: #fff;
-  outline: none;
+    flex: 1;
+    border: none;
+    padding: 25px 19px;
+    background: transparent;
+    color: #fff;
+    outline: none;
 }
+
 .subscribe-box button {
-  background: #ff6a00;
-  border: none;
-  padding: 0 20px;
-  color: #fff;
-  cursor: pointer;
+    background: #ff6a00;
+    border: none;
+    padding: 0 20px;
+    color: #fff;
+    cursor: pointer;
 }
+
 .subscribe-box button i {
-  font-size: 16px;
+    font-size: 16px;
 }
+
 @media (max-width: 900px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-  }
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
 }
+
 .footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #444;
-  padding-top: 15px;
-  font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    font-size: 14px;
 }
+
 .course-card {
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      background-color: #fff;
-        margin: 20px;
-        width: 300px;
-        grid-column-gap: 20px;
-        display: grid;
-    }
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 20px;
+    width: 300px;
+    grid-column-gap: 20px;
+    display: grid;
+}
 
-    .course-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-    }
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
 
-    .course-header {
-      background-color: #f98604;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+.course-header {
+    background-color: #f98604;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-    .course-body {
-      padding: 20px;
-    }
+.course-body {
+    padding: 20px;
+}
 
-    .course-body h5 {
-      margin-bottom: 15px;
-    }
- .course-body ul {
-      padding-left: 20px;
-    }
+.course-body h5 {
+    margin-bottom: 15px;
+}
 
-    .course-footer {
-      padding: 20px;
-      text-align: center;
-      background-color: #f5f5f5;
-    }
+.course-body ul {
+    padding-left: 20px;
+}
 
-    .course-footer .btn {
-      margin: 5px;
-    }
+.course-footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
 
-    .intermediate {
-      background-color: #f98604;
-    }
+.course-footer .btn {
+    margin: 5px;
+}
 
-    .intermediate .course-header {
-      background-color: #f98604;
-    }
-    row g-4{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+.intermediate {
+    background-color: #f98604;
+}
 
+.intermediate .course-header {
+    background-color: #f98604;
+}
+
+row g-4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+col-md-4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    min-height: 400px;
+
+}
