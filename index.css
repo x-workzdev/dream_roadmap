@@ -415,7 +415,7 @@ contact-info i {
     grid-column-gap: 20px;
     display: flex;                 
     flex-direction: column;        
-    height: 100%;  
+    height: 90%;  
    
 }
 
@@ -468,6 +468,7 @@ row g-4 {
     gap: 20px;
     display: flex;
     gap: 20px;
+    justify-content: space-between;
 }
 
 col-md-4 {
@@ -484,7 +485,7 @@ col-md-4 {
 }
 .about-section {
     max-width: 1100px;
-    margin: 80px auto;
+    margin:  auto;
     padding: 0 20px;
     text-align: center;
 }
@@ -506,3 +507,127 @@ col-md-4 {
     margin-bottom: 22px;
     color: #5f6b7a;
 }
+.card-text {
+    /* background-color: #f2f2f2;    */
+    color: #5a6c7d;              
+    
+    /* border-radius: 4px; */
+    font-size: 12px;
+    /* line-height: 1.6; */
+    font-style: normal;
+    text-align: left;
+}
+.nav-right .nav-link {
+    background-color: #f98604;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+body {
+            background: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+            max-width: 700px;
+        }
+
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic-list li {
+            margin-bottom: 8px;
+        }
+
+        .main-content {
+            flex: 1;
+            margin-top: 90px;
+            /* header height */
+            margin-bottom: 80px;
+            /* footer height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 750px;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Card */
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Scroll Area */
+        .accordion-wrapper {
+            overflow-y: auto;
+            flex: 1;
+            padding-right: 5px;
+        }
+
+        /* Accordion Colors */
+        .accordion-button {
+            background: #f8d7da;
+            color: #842029;
+            font-weight: 600;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: #dc3545;
+            color: white;
+        }
+
+        .accordion-body {
+            background: #fff5f5;
+        }
+
+        .footer {
+            background: black;
+            color: white;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+
+        .footer-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer a {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 5px;
+            color: #ccc;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            color: white;
+            border-radius: 10px solid white;
+        }   
+
+
