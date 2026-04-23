@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <link rel="icon" type="image/png" href="https://x-workz.com/Logo.png">
+
+    <title>X-Workz Training Roadmap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f4f8;
+    color: #333;
+    font-family: "Segoe UI", Arial, sans-serif;
+   
+}
+
+/* Header */
+/* header {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+} */
+
+header,.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    z-index: 9999;
+}
+
+
+
+.nav-left img {
+    width: 100px;
+    height: 50px;
+}
+
+.nav-center {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-title {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* Sections */
+section {
+    padding: 50px 80px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+/* Introduction */
+.intro p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* Roadmap */
+.roadmap {
+    background-color: #ffffff;
+}
+
+.step {
+    background-color: #f8fafc;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.step ul {
+    padding-left: 20px;
+}
+
+.step li {
+    margin-bottom: 8px;
+}
+
+/* Introduction Section Container*/
+.intro {
+    padding: 70px 10%;
+    background: #ffffff;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Text Section Styling */
+.intro-text {
+    width: 45%;
+    animation: slideInLeft 1.2s ease-in-out;
+}
+
+/* text*/
+.intro-text h2 {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    /* text color */
+    color: #f97a13;
+    -webkit-text-fill-color: #f97a13;
+    background: none;
+
+    position: relative;
+    display: inline-block;
+    margin-bottom: 22px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: modernTitleIn 1.2s ease forwards;
+
+    /*  Subtle */
+    text-shadow:
+        0 -1px 0 rgba(255, 255, 255, 0.35),  /* soft highlight (shine) */
+        0 3px 4px rgba(0, 0, 0, 0.45),       /* near shadow */
+        0 9px 3px rgba(0, 0, 0, 0.35),     /* mid depth */
+        0 28px 56px rgba(0, 0, 0, 0.25);     /* deep backside fall */
+}
+
+/*  Underline (Gradient)*/
+.intro-text h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 3px;
+
+    background: linear-gradient(90deg, #f1760b, #edb17c, #000000);
+    border-radius: 999px;
+
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.35),
+        0 12px 28px rgba(0, 0, 0, 0.25);
+
+    animation: underlineGrow 1.1s ease forwards;
+    animation-delay: 0.6s;
+}
+
+/* Animations */
+@keyframes modernTitleIn {
+    from {
+        opacity: 0;
+        transform: translateY(28px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Paragraph styling  */
+.intro-text p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #1f2933; 
+
+    text-align: left ;
+
+    /* (top-down light) */
+    text-shadow:
+        0 1px 1px rgba(43, 30, 30, 0.4),   /*  (glass shine) */
+        0 2px 6px rgba(0, 0, 0, 0.18),        /* main depth shadow */
+        0 8px 18px rgba(0, 0, 0, 0.12),     
+        0 14px 30px rgba(99, 102, 241, 0.18); /* subtle color*/
+
+    letter-spacing: 0.3px;
+
+    backdrop-filter: blur(2px);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Image Section Styling*/
+.intro-image {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    animation: slideInRight 1.2s ease-in-out;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    transition: transform 0.5s ease;
+}
+
+.intro-image img:hover {
+    transform: scale(1.03);
+}
+
+/* Animations Definitions */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* image sliding */
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes underlineGrow {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Responsive Design (Mobile View) */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .intro-text,
+    .intro-image {
+        width: 100%;
+    }
+
+    .intro-image img {
+        max-width: 420px;
+    }
+}
+
+/* Conclusion */
+.conclusion p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 60px 40px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    justify-items: center;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer h4::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: #ff6a00;
+    display: block;
+    margin-top: 8px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #ff6a00;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+contact-info i {
+    color: #ff6a00;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.subscribe-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.subscribe-box {
+    display: flex;
+    background: #1a1a1a;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.subscribe-box input {
+    flex: 1;
+    border: none;
+    padding: 25px 19px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.subscribe-box button {
+    background: #ff6a00;
+    border: none;
+    padding: 0 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.subscribe-box button i {
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.course-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 300px;
+    
+    display: flex;                 
+    flex-direction: column;        
+    height: 90%;  
+   
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.course-header {
+    background-color: #f98604;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.course-body {
+    padding: 20px;
+    flex:1;
+}
+
+.course-body h5 {
+    margin-bottom: 15px;
+}
+
+.course-body ul {
+    padding-left: 20px;
+}
+
+.course-footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.course-footer .btn {
+    margin: 5px;
+}
+
+.intermediate {
+    background-color: #f98604;
+}
+
+.intermediate .course-header {
+    background-color: #f98604;
+}
+
+.row.g-5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.col-md-5 {
+    flex: 0 0 auto;
+    display: flex;
+   
+    justify-content: space-between;
+    border-radius: 8px;
+    
+    min-height: 350px;
+
+}
+.about-section {
+    max-width: 1100px;
+    margin:  auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.about-title span {
+    color: #ff0055;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+    color: #5f6b7a;
+}
+.course-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+
+}
+.courses-title {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #111;
+}
+
+.courses-title span {
+    color: #ff0055;
+}
+.courses-content {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #5f6b7a;
+}
+.card-text {
+    /* background-color: #f2f2f2;    */
+    color: #5a6c7d;              
+    
+    /* border-radius: 4px; */
+    font-size: 12px;
+    /* line-height: 1.6; */
+    font-style: normal;
+    text-align: left;
+}
+.nav-right .nav-link {
+    background-color: #f98604;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+body {
+            background: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 20px;
+            max-width: 700px;
+        }
+
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic-list li {
+            margin-bottom: 8px;
+        }
+
+        .main-content {
+            flex: 1;
+           margin: 100px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 750px;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Card */
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Scroll Area */
+        .accordion-wrapper {
+            overflow-y: auto;
+            flex: 1;
+            padding-right: 5px;
+        }
+
+        /* Accordion Colors */
+        .accordion-button {
+            background: #f8d7da;
+            color: #842029;
+            font-weight: 600;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: #dc3545;
+            color: white;
+        }
+
+        .accordion-body {
+            background: #fff5f5;
+        }
+
+        .footer {
+            background: black;
+            color: white;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+
+        .footer-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer a {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 5px;
+            color: #ccc;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            color: white;
+            border-radius: 10px solid white;
+        }   
+
+
+
+        </style>
+
+</head>
+<header>
+
+    <!-- nav bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="https://x-workz.com/Logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <h1 class="nav-title">X-Workz Training Roadmap</h1>
+
+        </div>
+        </div>
+        <div class="nav-right">
+            <button onclick="window.location.href='../fullstack.html'" class="nav-link">BACK</button>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <div class="main-content">
+        <div class="row g-5">
+
+            <div class="col-md-5" style="height: 52%;">
+                <div class="course-card">
+                    <div class="course-header">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.cIy6EEdlrO0RQelinI20aQHaEK?pid=ImgDetMain"
+                            class="img-fluid mb-3" style="height:100px;">
+                        <h4>CORE JAVA</h4>
+                        <p><strong>Duration:</strong> 6 Weeks</p>
+                    </div>
+                    <div class="course-footer">
+
+                        <a class="btn btn-danger" href="core-java.html">View Course</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-5" style="height: 52%;">
+                <div class="course-card">
+                    <div class="course-header">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmGdZaDqhvCiltGA2goPhREvNrm2SPWNS0nQ&s"
+                            class="img-fluid mb-3" style="height:100px;width:100px;">
+                        <h4>ADVANCED JAVA</h4>
+                        <p><strong>Duration:</strong> 8 Weeks</p>
+                    </div>
+                    
+                    <div class="course-footer">
+
+                        <button class="btn btn-danger"><a href="advanced-java.html"
+                                style="color: white; text-decoration: none;">View Course</a></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="https://x-workz.com/Logo.png" class="footer-logo " width="200" height="auto" alt="Logo">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/xworkzdevelopmentcenter/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/workz_x"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/xworkzraj"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/x-workz-odc/"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <div class="contact-info">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p>
+                        <strong>X-workz Rajajinagar</strong><br />
+                        No 712/55, 62st Cross, 5th Block,<br />
+                        Rajajinagar, Bengaluru,<br />
+                        Karnataka 560010
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p>
+                        <strong>X-workz BTM</strong><br />
+                        1st Floor, 50, 100 Feet Ring Rd,<br />
+                        Vysya Bank Colony, BTM 2nd Stage,<br />
+                        Bengaluru, Karnataka 560076
+                    </p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="contact-info">
+                    <i class="bi bi-telephone"></i>
+                    <p>+91 98869 71483</p>
+                </div>
+                <div class="contact-info">
+                    <i class="bi bi-envelope"></i>
+                    <p>contact@x-workz.in</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026, Omkar Development Centre. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
