@@ -29,7 +29,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-
+        
 
         .main-content {
             flex: 1;
@@ -79,18 +79,13 @@
         .accordion-body {
             background: #fff5f5;
         }
-
         .accordion-body ul {
-            text-align: left;
-            /* ✅ text left */
-            padding-left: 20px;
-            /* ✅ proper spacing */
-        }
-
-        .accordion-body li {
-            text-align: left;
-            /* ✅ each item left */
-        }
+    text-align: left;      /* ✅ text left */
+    padding-left: 20px;    /* ✅ proper spacing */
+}
+.accordion-body li {
+    text-align: left;      /* ✅ each item left */
+}
 
         .footer {
             background: black;
@@ -139,7 +134,7 @@
         </div>
         </div>
         <div class="nav-right">
-            <button onclick="window.location.href='jee.html'" class="nav-link">BACK</button>
+            <button onclick="window.location.href='frameworks.html'" class="nav-link">BACK</button>
         </div>
     </nav>
 
@@ -154,7 +149,7 @@
             <div class="card p-4">
 
                 <h3 class="text-center mb-4 text-danger">
-                     ADVANCED JAVA - EXCEPTIONS
+                   Framework - Spring
                 </h3>
                 <div class="accordion-wrapper">
                     <div class="accordion" id="weekAccordion">
@@ -164,8 +159,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week1">
-                                    Week 8 : Exception Handling in Java
-        </button>
+                                    Week 1 : Spring Framework
                                 </button>
                             </h2>
 
@@ -174,17 +168,75 @@
                                 <div class="accordion-body">
 
                                     <ul>
-                                        <li>Introduction to Exceptions</li>
-                <li>Types of Exceptions (Checked & Unchecked)</li>
-                <li>Exception Hierarchy</li>
-                <li>try, catch, finally block</li>
-                <li>throw & throws keyword</li>
-                <li>Custom Exception Creation</li>
-                <li>Multiple catch & Nested try</li>
-                <li>Best Practices & Real-time Examples</li>
+                                        <li>Introduction to Spring Framework</li>
+                                        <li>Spring Core Concepts</li>
+                                        <li>Dependency Injection (DI) and Inversion of Control (IoC)</li>
+                                        <li>Spring MVC Architecture</li>
+                                        <li>Building RESTful APIs with Spring Boot</li>
+                                        <li>Spring Data JPA for Database Access</li>
+                                        <li>Spring Security Basics</li>
+
                                     </ul>
 
                                     <!-- Assessment Line at End -->
+                                    <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
+                                        📌 Assessment: Weekly Test
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Week 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#week2">
+                                    Week 2 : Framworks -SpringMVC
+                                </button>
+                            </h2>
+
+                            <div id="week2" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
+
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Spring MVC Architecture</li>
+                                        <li>Controllers and Request Mapping</li>
+                                        <li>View Resolvers and JSP Integration</li>
+                                        <li>Form Handling and Validation</li>
+                                        <li>Exception Handling in Spring MVC</li>
+                                        <li>Building RESTful APIs with Spring MVC</li>
+                                    </ul>
+
+                                    <!-- Assessment Line -->
+                                    <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
+                                        📌 Assessment: Weekly Test
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#week2">
+                                    Week 2 : Framworks -Spring Boot
+                                </button>
+                            </h2>
+
+                            <div id="week2" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
+
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Introduction to Spring Boot</li>
+                                        <li>Spring Boot Auto-Configuration</li>
+                                        <li>Creating RESTful APIs with Spring Boot</li>
+                                        <li>Spring Boot Data JPA for Database Access</li>
+                                        <li>Spring Boot Security Basics</li>
+                                        <li>Deploying Spring Boot Applications</li>
+                                    </ul>
+
+                                    <!-- Assessment Line -->
                                     <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
                                         📌 Assessment: Weekly Test
                                     </p>
