@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <link rel="icon" type="image/png" href="https://x-workz.com/Logo.png">
+
+    <title>X-Workz Training Roadmap</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+            max-width: 700px;
+        }
+
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        .main-content {
+            flex: 1;
+            margin-top: 90px;
+            /* header height */
+            margin-bottom: 80px;
+            /* footer height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 750px;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Card */
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Scroll Area */
+        .accordion-wrapper {
+            overflow-y: auto;
+            flex: 1;
+            padding-right: 5px;
+        }
+
+        /* Accordion Colors */
+        .accordion-button {
+            background: #f8d7da;
+            color: #842029;
+            font-weight: 600;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: #dc3545;
+            color: white;
+        }
+
+        .accordion-body {
+            background: #fff5f5;
+        }
+
+        .accordion-body ul {
+            text-align: left;
+            /* ✅ text left */
+            padding-left: 20px;
+            /* ✅ proper spacing */
+        }
+
+        .accordion-body li {
+            text-align: left;
+            /* ✅ each item left */
+        }
+
+        .footer {
+            background: black;
+            color: white;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+
+        .footer-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer a {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 5px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<header>
+
+    <!-- nav bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="https://x-workz.com/Logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <h1 class="nav-title">X-Workz Training Roadmap</h1>
+
+        </div>
+        </div>
+        <div class="nav-right">
+            <button onclick="window.location.href='../internship.html'" class="nav-link">BACK</button>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+
+    <div class="main-content">
+
+        <div class="container">
+
+            <div class="card p-4">
+
+                <h3 class="text-center mb-4 text-danger">
+                    SQL BASICS
+                </h3>
+                <div class="accordion-wrapper">
+                    <div class="accordion" id="weekAccordion">
+
+                        <!-- Week 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#week1">
+                                    Week 1 : SQL Basics
+                                </button>
+                                </button>
+                            </h2>
+
+                            <div id="week1" class="accordion-collapse collapse show" data-bs-parent="#weekAccordion">
+
+                                <div class="accordion-body">
+
+                                    <ul>
+                                        <li>Introduction to Databases & SQL</li>
+                                        <li>RDBMS Concepts</li>
+                                        <li>DDL Commands (CREATE, ALTER, DROP)</li>
+                                        <li>DML Commands (INSERT, UPDATE, DELETE)</li>
+                                        <li>SELECT Queries & WHERE Clause</li>
+                                        <li>Operators (AND, OR, NOT, LIKE, IN, BETWEEN)</li>
+                                        <li>Sorting (ORDER BY)</li>
+                                        <li>Basic Functions (COUNT, SUM, AVG)</li>
+                                        <li>Aggregate Functions (COUNT, SUM, AVG)</li>
+                                        <li>Introduction to JOIN</li>
+                                        <li>Types of JOIN (INNER JOIN, LEFT JOIN, RIGHT JOIN)</li>
+                                        <li>Simple JOIN Queries Practice</li>
+                                    </ul>
+
+                                    <!-- Assessment Line at End -->
+                                    <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
+                                        📌 Assessment: Weekly Test
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="https://www.x-workz.in/Logo.png" class="footer-logo " width="200" height="auto" alt="Logo">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/xworkzdevelopmentcenter/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/workz_x"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/xworkzraj"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/x-workz-odc/"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <div class="contact-info">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p>
+                        <strong>X-workz Rajajinagar</strong><br />
+                        No 712/55, 62st Cross, 5th Block,<br />
+                        Rajajinagar, Bengaluru,<br />
+                        Karnataka 560010
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p>
+                        <strong>X-workz BTM</strong><br />
+                        1st Floor, 50, 100 Feet Ring Rd,<br />
+                        Vysya Bank Colony, BTM 2nd Stage,<br />
+                        Bengaluru, Karnataka 560076
+                    </p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="contact-info">
+                    <i class="bi bi-telephone"></i>
+                    <p>+91 98869 71483</p>
+                </div>
+                <div class="contact-info">
+                    <i class="bi bi-envelope"></i>
+                    <p>contact@x-workz.in</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026, Omkar Development Centre. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
