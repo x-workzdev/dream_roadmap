@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    
+
 
     <link rel="icon" type="image/png" href="https://x-workz.com/Logo.png">
 
     <title>X-Workz Training Roadmap</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -29,9 +29,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .topic-list li {
-            margin-bottom: 8px;
-        }
+
 
         .main-content {
             flex: 1;
@@ -82,6 +80,18 @@
             background: #fff5f5;
         }
 
+        .accordion-body ul {
+            text-align: left;
+            /* ✅ text left */
+            padding-left: 20px;
+            /* ✅ proper spacing */
+        }
+
+        .accordion-body li {
+            text-align: left;
+            /* ✅ each item left */
+        }
+
         .footer {
             background: black;
             color: white;
@@ -111,32 +121,28 @@
             margin-top: 5px;
             color: #ccc;
         }
-        .nav-right{
-            display: flex;
-            align-items: center;
-            color: white;
-            border-radius: 10px solid white;
-        }
     </style>
 </head>
 <header>
-    <!-- nav bar -->
-     <nav class="navbar">
-    <div class="nav-left">
-        <a href="index.html">
-            <img src="https://x-workz.com/Logo.png" alt="Logo">
-        </a>
-    </div>
 
-    <div class="nav-center">
-        <h1 class="nav-title">X-Workz Training Roadmap</h1>
-        
-    </div>
-     </div>
-    <div class="nav-right">
-        <button onclick="window.location.href='index.html'" class="nav-link">BACK</button>
-    </div>
-</nav>
+    <!-- nav bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="https://x-workz.com/Logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <h1 class="nav-title">X-Workz Training Roadmap</h1>
+
+        </div>
+        </div>
+        <div class="nav-right">
+            <button onclick="window.location.href='fullstack-java.html'" class="nav-link">BACK</button>
+        </div>
+    </nav>
+
 </header>
 
 <body>
@@ -148,7 +154,7 @@
             <div class="card p-4">
 
                 <h3 class="text-center mb-4 text-danger">
-                    Internship – 4 Months Training Program
+                    CORE JAVA
                 </h3>
                 <div class="accordion-wrapper">
                     <div class="accordion" id="weekAccordion">
@@ -158,7 +164,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week1">
-                                    Week 1 – Programming & Java Basics
+                                    Week 1 : Programming Basics & Setup
                                 </button>
                             </h2>
 
@@ -169,8 +175,8 @@
                                     <ul>
                                         <li>Introduction to Programming</li>
                                         <li>Java Installation (JDK, JVM, JRE)</li>
-                                        <li>Variables & Data Types</li>
-                                        <li>Input / Output</li>
+                                        <li>Setting Environment Variables</li>
+                                        <li>Using Notepad++ for Java Coding</li>
                                         <li>First Java Program</li>
                                     </ul>
 
@@ -188,7 +194,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week2">
-                                    Week 2 – Control Statements & Arrays
+                                    Week 2 : Variables & Operators
                                 </button>
                             </h2>
 
@@ -196,11 +202,13 @@
 
                                 <div class="accordion-body">
                                     <ul>
+                                        <li>Variables – Primitive & Non-Primitive Types</li>
+                                        <li>Data Types</li>
+                                        <li>Type Casting</li>
                                         <li>Operators</li>
-                                        <li>If / Switch</li>
-                                        <li>Loops (for, while, do-while)</li>
-                                        <li>Arrays</li>
-                                        <li>Pattern Programs</li>
+                                        <li>Input / Output</li>
+                                        <li>Scanner Class</li>
+
                                     </ul>
 
                                     <!-- Assessment Line -->
@@ -217,7 +225,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week3">
-                                    Week 3 – OOP Fundamentals
+                                    Week 3 : Control Statements
                                 </button>
                             </h2>
 
@@ -225,11 +233,11 @@
 
                                 <div class="accordion-body">
                                     <ul>
-                                        <li>Classes & Objects</li>
-                                        <li>Methods</li>
-                                        <li>Constructors</li>
-                                        <li>this & static</li>
-                                        <li>Encapsulation</li>
+                                        <li>Type Casting</li>
+                                        <li>If Statements</li>
+                                        <li>Switch Case</li>
+                                        <li>Loops</li>
+                                        <li>Pattern Programs</li>
                                     </ul>
 
                                     <!-- Assessment Line -->
@@ -246,7 +254,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week4">
-                                    Week 4 – Advanced OOP
+                                    Week 4 : Arrays & Methods
                                 </button>
                             </h2>
 
@@ -254,11 +262,11 @@
 
                                 <div class="accordion-body">
                                     <ul>
-                                        <li>Inheritance</li>
-                                        <li>Polymorphism</li>
-                                        <li>Abstraction</li>
-                                        <li>Interfaces</li>
-                                        <li>Packages</li>
+                                        <li>Arrays (1D & 2D)</li>
+                                        <li>Methods</li>
+                                        <li>Method Overloading</li>
+                                        <li>Program Execution Flow</li>
+                                        <li>JDK Architecture</li>
                                     </ul>
 
                                     <!-- Assessment Line -->
@@ -280,7 +288,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week5">
-                                    Week 5 – Exception Handling & Collections
+                                    Week 5 : Classes & Objects
                                 </button>
                             </h2>
 
@@ -288,11 +296,10 @@
 
                                 <div class="accordion-body">
                                     <ul>
-                                        <li>Try / Catch / Finally</li>
-                                        <li>Custom Exceptions</li>
-                                        <li>List, Set, Map</li>
-                                        <li>Generics</li>
-                                        <li>Iterators</li>
+                                        <li>Classes & Objects</li>
+                                        <li>Constructors</li>
+                                        <li>this Keyword</li>
+                                        <li>static Keyword</li>
                                     </ul>
 
                                     <!-- Assessment Line -->
@@ -309,7 +316,8 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week6">
-                                    Week 6 – File Handling & JDBC
+                                    Week 6 : Encapsulation
+
                                 </button>
                             </h2>
 
@@ -317,16 +325,19 @@
 
                                 <div class="accordion-body">
                                     <ul>
-                                        <li>File I/O</li>
-                                        <li>Serialization</li>
-                                        <li>JDBC Architecture</li>
-                                        <li>Database Connection</li>
-                                        <li>CRUD Operations</li>
+                                        <li>Encapsulation</li>
+                                        <li>Getters & Setters</li>
+                                        <li>equals() Method</li>
+                                        <li>toString() Method</li>
                                     </ul>
 
                                     <!-- Assessment Line -->
                                     <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
                                         📌 Assessment: Weekly Test
+                                    </p>
+
+                                    <p style="color: #198754; font-weight: bold; margin-top: 6px;">
+                                        🎯 Mock Interview – 2
                                     </p>
 
                                 </div>
@@ -338,27 +349,42 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week7">
-                                    Week 7 – SQL
+                                    Week 7 : Inheritance
                                 </button>
                             </h2>
 
                             <div id="week7" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
 
                                 <div class="accordion-body">
-                                    <ul>
-                                        <li>SQL Basics & Queries</li>
-                                        <li>DDL & DML Commands</li>
-                                        <li>Joins</li>
-                                        <li>Subqueries</li>
-                                        <li>Practice Queries</li>
-                                    </ul>
 
-                                    <!-- Assessment Line -->
+                                    <!-- Inner Accordion -->
+                                    <div class="accordion" id="week7InnerAccordion">
+
+                                        <!-- SQL Section -->
+                                        <div class="accordion-item">
+
+
+                                            <div id="week7SQL" class="accordion-collapse collapse show"
+                                                data-bs-parent="#week7InnerAccordion">
+
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Inheritance</li>
+                                                        <li>Single Inheritance</li>
+                                                        <li>Multilevel Inheritance</li>
+                                                        <li>Hierarchical Inheritance</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Assessment -->
                                     <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
                                         📌 Assessment: Weekly Test
                                     </p>
-                                </div>
 
+                                </div>
                             </div>
                         </div>
 
@@ -367,22 +393,38 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week8">
-                                    Week 8 –SQL Advanced
+                                    Week 8 : Polymorphism
                                 </button>
                             </h2>
 
                             <div id="week8" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
 
                                 <div class="accordion-body">
-                                    <ul>
-                                        <li>Joins</li>
-                                        <li>Subqueries</li>
-                                        <li>Indexes</li>
-                                        <li>Advanced Queries</li>
-                                        <li>Performance Practice</li>
-                                    </ul>
 
-                                    <!-- Assessment Line -->
+                                    <!-- Inner Accordion -->
+                                    <div class="accordion" id="week8InnerAccordion">
+
+                                        <!-- SQL Section -->
+                                        <div class="accordion-item">
+
+
+                                            <div id="week8SQL" class="accordion-collapse collapse show"
+                                                data-bs-parent="#week8InnerAccordion">
+
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Polymorphism</li>
+                                                        <li>Method Overloading</li>
+                                                        <li>Method Overriding</li>
+                                                        <li>Runtime Polymorphism</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Assessment -->
                                     <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
                                         📌 Assessment: Weekly Test
                                     </p>
@@ -391,8 +433,8 @@
                                     <p style="color: #198754; font-weight: bold; margin-top: 6px;">
                                         🎯 Mock Interview – 2
                                     </p>
-                                </div>
 
+                                </div>
                             </div>
                         </div>
 
@@ -401,213 +443,233 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week9">
-                                    Week 9 – Web Technologies
+                                    Week 9 : Abstraction
                                 </button>
                             </h2>
 
                             <div id="week9" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
 
                                 <div class="accordion-body">
-                                    <ul>
-                                        <li>HTML Basics</li>
-                                        <li>CSS Styling</li>
-                                        <li>Forms & Tables</li>
-                                        <li>Responsive Design</li>
-                                        <li>Mini Web Project</li>
-                                    </ul>
 
-                                    <!-- Assessment Line -->
+                                    <!-- Inner Accordion -->
+                                    <div class="accordion" id="week9InnerAccordion">
+
+                                        <!-- Java Section -->
+                                        <div class="accordion-item">
+
+                                            <div id="week9Java" class="accordion-collapse collapse show"
+                                                data-bs-parent="#week9InnerAccordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>Abstraction</li>
+                                                        <li>Abstract Class</li>
+                                                        <li>Abstract Methods</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- Assessment -->
                                     <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
                                         📌 Assessment: Weekly Test
                                     </p>
                                 </div>
-
                             </div>
                         </div>
-
                         <!-- Week 10 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week10">
-                                    Week 10 – CSS
+                                    Week 10 : Interfaces
+
                                 </button>
                             </h2>
-
-                            <div id="week10" class="accordion-coll
-                            apse collapse" data-bs-parent="#weekAccordion">
-
+                            <div id="week10" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
                                 <div class="accordion-body">
                                     <ul>
-                                        <li>CSS Styling</li>
-                                        <li>Flexbox</li>
-                                        <li>Responsive Design</li>
-                                        <li>Layout Practice</li>
-                                        <li>Mini Web Assignment</li>
+                                        <li>Interfaces</li>
+                                        <li>Multiple Inheritance using Interface</li>
+                                        <li>Interface Implementation</li>
+                                        <li>Access Modifiers</li>
                                     </ul>
-
-                                    <!-- Assessment Line -->
+                                    <!-- Assessment -->
                                     <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
                                         📌 Assessment: Weekly Test
                                     </p>
                                 </div>
-
                             </div>
                         </div>
-
 
                         <!-- Week 11 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week11">
-                                    Week 11 – Java Revision
+                                    Week 11 : IntelliJ IDEA & Packages
                                 </button>
                             </h2>
-
-                            <div id="week11" class="accordion-coll
-                            apse collapse" data-bs-parent="#weekAccordion">
-
+                            <div id="week11" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
                                 <div class="accordion-body">
                                     <ul>
-                                        <li>OOP Revision</li>
-                                        <li>JDBC Practice</li>
-                                        <li>Application Design Review</li>
-                                        <li>Core Concepts Recap</li>
-                                        <li>Practice Assignments</li>
+                                        <li>IntelliJ IDEA Installation</li>
+                                        <li>Project Creation in IntelliJ</li>
+                                        <li>Packages</li>
+                                        <li>Code Organization</li>
                                     </ul>
-
-                                    <!-- Assessment Line -->
+                                    <!-- Assessment -->
                                     <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
                                         📌 Assessment: Weekly Test
                                     </p>
-                                </div>
+                                    <!-- Mock Interview -->
+                                    <p style="color: #198754; font-weight: bold; margin-top: 6px;">
+                                        🎯 Mock Interview – 3
+                                    </p>
 
+                                </div>
                             </div>
                         </div>
-
                         <!-- Week 12 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week12">
-                                    Week 12 – JavaScript Basics
+                                    Week 12 : Object Class & Wrapper Classes
                                 </button>
                             </h2>
-
                             <div id="week12" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
-
                                 <div class="accordion-body">
                                     <ul>
-                                        <li>Variables & Functions</li>
-                                        <li>Conditions & Loops</li>
-                                        <li>Events</li>
-                                        <li>DOM Basics</li>
-                                        <li>Mini JS Tasks</li>
+                                        <li>Object Class</li>
+                                        <li>instanceof Operator</li>
+                                        <li>Wrapper Classes</li>
+                                        <li>Boxing & Unboxing</li>
                                     </ul>
 
-                                    <!-- Assessment Line -->
+                                    <!-- Assessment -->
                                     <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
-                                        📌 Assessment: Weekly Test
+                                        📌 Assessment: weekly Test
                                     </p>
 
-                                    <!-- Mock Interview -->
-                                    <p style="color: #198754; font-weight: bold; margin-top: 6px;">
-                                        🎯 Mock Interview – 3
-                                    </p>
                                 </div>
-
                             </div>
                         </div>
-
-                        <!-- Week 13 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week13">
-                                    Week 13 – Advanced JavaScript
+                                    Week 13 : String Concepts
                                 </button>
                             </h2>
                             <div id="week13" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
                                 <div class="accordion-body">
                                     <ul>
-                                        <li>DOM Manipulation</li>
-                                        <li>Form Validation</li>
-                                        <li>ES6 Features</li>
-                                        <li>API Introduction</li>
-                                        <li>Mini Tasks</li>
+                                        <li>String Class</li>
+                                        <li>String Methods</li>
+                                        <li>StringBuilder</li>
+                                        <li>StringBuffer</li>
                                     </ul>
+
                                     <!-- Assessment -->
                                     <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
-                                        📌 Assessment: Weekly Test
+                                        📌 Assessment: weekly Test
                                     </p>
+
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Week 14 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#week14">
-                                    Week 14 – Integration & Mini Project
+                                    Week 14 : Git & GitHub
                                 </button>
                             </h2>
                             <div id="week14" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
                                 <div class="accordion-body">
                                     <ul>
-                                        <li>Java + SQL Integration</li>
-                                        <li>Web + Backend Flow</li>
-                                        <li>CRUD Application</li>
-                                        <li>Project Structure</li>
-                                        <li>Debugging</li>
-                                    </ul>
-                                    <!-- Assessment -->
-                                    <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
-                                        📌 Assessment: Weekly Test
-                                    </p> 
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Week 15 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#week15">
-                                    Week 15 – Final Revision & Placement Prep
-                                </button>
-                            </h2>
-                            <div id="week15" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>Complete Revision</li>
-                                        <li>Resume Building</li>
-                                        <li>Aptitude Practice</li>
-                                        <li>HR Interview Skills</li>
-                                        <li>Technical Discussion</li>
+                                        <li>Git Installation</li>
+                                        <li>Git Commands</li>
+                                        <li>GitHub Account Setup</li>
+                                        <li>Push & Pull Code</li>
                                     </ul>
 
                                     <!-- Assessment -->
                                     <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
-                                        📌 Assessment: Final Evaluation
+                                        📌 Assessment: weekly Test
                                     </p>
 
                                 </div>
                             </div>
                         </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#week15">
+                                    Week 15 – Advanced Servlets, Sessions & Security Basics
+                                </button>
+                            </h2>
+                            <div id="week15" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Advanced Servlet Features</li>
+                                        <li>Session Tracking Techniques</li>
+                                        <li>Basic Security Concepts</li>
+                                        <li>Project Security Implementation</li>
+                                        <li>Deployment Practice</li>
+                                    </ul>
+
+                                    <!-- Assessment -->
+                                    <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
+                                        📌 Assessment: weekly Test
+                                    </p>
+                                    <p style="color: #198754; font-weight: bold; margin-top: 6px;">
+                                        🎯 Mock Interview –4
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#week16">
+                                    Week 16 –Spring Core & Spring MVC
+                                </button>
+                            </h2>
+                            <div id="week16" class="accordion-collapse collapse" data-bs-parent="#weekAccordion">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Spring Framework Overview</li>
+                                        <li>Dependency Injection</li>
+                                        <li>Spring MVC Architecture</li>
+                                        <li>Project Integration with Spring</li>
+                                        <li>Deployment Practice</li>
+                                    </ul>
+
+                                    <!-- Assessment -->
+                                    <p style="color: #d63384; font-weight: bold; margin-top: 12px;">
+                                        📌 Assessment: weekly Test
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-col">
-                <img src="https://x-workz.com/Logo.png" class="footer-logo " width="200" height="auto" alt="Logo">
+                <img src="https://www.x-workz.in/Logo.png" class="footer-logo " width="200" height="auto" alt="Logo">
                 <h4>Follow Us</h4>
                 <div class="social-links">
                     <a href="https://www.facebook.com/xworkzdevelopmentcenter/"><i class="bi bi-facebook"></i></a>
